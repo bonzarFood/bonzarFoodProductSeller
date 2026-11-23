@@ -1,15 +1,12 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:http/http.dart' as http;
 
 const _productsTtl = Duration(seconds: 30);
 
 String get defaultApiBaseUrl {
-  const configured = String.fromEnvironment('API_BASE_URL');
-  if (configured.isNotEmpty) return configured;
   return 'https://bonzarfoodproductbackend-production.up.railway.app/api/v1';
 }
 
@@ -46,15 +43,6 @@ class WholesaleApiClient {
         this.baseUrl,
         'baseUrl',
         'Must be an HTTP(S) URL.',
-      );
-    }
-    final isLocalhost =
-        parsed.host == 'localhost' || parsed.host == '127.0.0.1';
-    if (kReleaseMode && parsed.scheme != 'https' && !isLocalhost) {
-      throw ArgumentError.value(
-        this.baseUrl,
-        'baseUrl',
-        'Release apps require HTTPS, except when connecting to localhost.',
       );
     }
   }

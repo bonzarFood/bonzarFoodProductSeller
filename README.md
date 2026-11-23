@@ -7,7 +7,7 @@ Auth, Firestore, and Google Sign-In are not required.
 
 ```sh
 flutter pub get
-flutter run --dart-define=API_BASE_URL=http://10.0.2.2:3000/api/v1
+flutter run
 flutter analyze
 flutter test
 ```
