@@ -13,12 +13,12 @@ flutter test
 ```
 
 If `API_BASE_URL` is omitted, the app uses the production API:
-`https://wholesellerbackend-production.up.railway.app/api/v1`.
+`https://bonzarfoodproductbackend-production.up.railway.app/api/v1`.
 
 For release builds, the production URL is used by default. To override it:
 
 ```sh
-flutter build apk --release --dart-define=API_BASE_URL=https://wholesellerbackend-production.up.railway.app/api/v1
+flutter build apk --release --dart-define=API_BASE_URL=https://bonzarfoodproductbackend-production.up.railway.app/api/v1
 ```
 
 New users register with name, email, and password. Registration always creates

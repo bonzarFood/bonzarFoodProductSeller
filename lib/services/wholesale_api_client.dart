@@ -10,7 +10,7 @@ const _productsTtl = Duration(seconds: 30);
 String get defaultApiBaseUrl {
   const configured = String.fromEnvironment('API_BASE_URL');
   if (configured.isNotEmpty) return configured;
-  return 'https://wholesellerbackend-production.up.railway.app/api/v1';
+  return 'https://bonzarfoodproductbackend-production.up.railway.app/api/v1';
 }
 
 class ApiException implements Exception {

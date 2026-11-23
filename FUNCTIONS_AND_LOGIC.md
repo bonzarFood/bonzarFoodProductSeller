@@ -23,5 +23,5 @@
 - Store name, contact, and location are retained for sales entry; they are not shown on the profile card.
 
 ## Connection
-- Production API default: `https://wholesellerbackend-production.up.railway.app/api/v1`.
+- Production API default: `https://bonzarfoodproductbackend-production.up.railway.app/api/v1`.
 - Set Flutter's `--dart-define=API_BASE_URL=<URL>` to use a different environment, such as a local API.
